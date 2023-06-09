@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/paasoo_v2?autoReconnect=true&characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: root
+  redis:
+    host: 192.168.0.2
+    port: 6379
+    password: paas-redis
+  jpa:
+    show-sql: false
